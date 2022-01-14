@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    color: #d6fff6;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+
+body {
+    font-family: "Manrope";
+}
+
+section {
+    background-color: #231651;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 768px;
+    width: 80%;
+}
+
+.container .main {
+    background-color: #2374ab;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.container .main .left-column {
+    padding: 25px;
+    width: 33%;
+    border-right: 2px solid rgba(77, 204, 189, 0.5);
+}
+
+@media only screen and (max-width: 900px) {
+    .container .main .left-column {
+        width: 100%;
+        border-right: 0;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+    }
+}
+
+.container .main .left-column .profile-image {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    border: 5px solid #4dccbd;
+    border-radius: 50%;
+    width: 12rem;
+}
+
+.container .main .left-column .profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    padding: 0;
+}
+
+.container .main .left-column .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 25px;
+    padding: 25px 0 0 0;
+}
+
+.container .main .left-column .social-media a {
+    transition: transform 0.3s;
+}
+
+.container .main .left-column .social-media a:hover {
+    transform: translateY(-7.5%);
+}
+
+.container .main .right-column {
+    padding: 25px;
+    width: 67%;
+}
+
+@media only screen and (max-width: 900px) {
+    .container .main .right-column {
+        width: 100%;
+        text-align: center;
+    }
+}
